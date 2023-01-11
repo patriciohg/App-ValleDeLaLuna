@@ -1,0 +1,71 @@
+<div *ngIf = "EnglishButton == false">
+<ion-header>
+  <ion-navbar color="fondo" text-center>
+    <ion-title>Valle de la luna</ion-title>
+  </ion-navbar>
+</ion-header>
+</div>
+<div *ngIf = "EnglishButton == true">
+<ion-header>
+  <ion-navbar color="fondo" text-center>
+    <ion-title>Moon valley</ion-title>
+  </ion-navbar>
+</ion-header>
+</div>
+<ion-content padding color="fondo" class="contenido">
+    <h2>Welcome</h2>
+    <ion-item color="fondo">
+        <ion-label>English</ion-label>
+        <ion-toggle [(ngModel)]="EnglishButton" disable="false" ></ion-toggle>      
+  </ion-item>
+    <ion-card>
+        <img src="../../assets/imgs/logo_valle.png" />
+    </ion-card>
+<div *ngIf="EnglishButton == false" text-justify>
+    <div text-center>
+          <h2>Valle de la luna</h2>
+    </div>
+    
+  <p>
+      Ubicado en el  desierto de atacama, a 13 km al oeste de San Pedro de Atacama y a 110 km al SE de Calama, perteneciente a la Región de Antofagasta Chile. En 1982 fue declarado santuario de la naturaleza </p>
+    <div text-center>
+      <h3>Visión</h3>
+    </div>
+<p>De manos de la actual administración, la asociación indígena Valle de la Luna, brindara un servicio de calidad y excelencia, logrando posicionar al santuario natural Valle de la Luna, como uno de los más importantes destinos turísticos de Chile y del Mundo.</p>   
+    <div text-center>
+    <h3>Misión</h3>
+    </div>
+    <p>
+        Brindar el mejor servicio con el fin de lograr la plena satisfacción de nuestros visitantes quienes podrán disfrutar y conocer las maravillas que ofrece el santuario natural “Valle de la Luna”.
+  </p><div text-center>
+    
+    <h3>¡Bienvenidos!</h3>
+    <h4>Asociacion indigena valle de la luna</h4>
+    </div>
+</div>
+<div *ngIf="EnglishButton == true" text-justify color="back-ground">
+    <div text-center>
+        <h2> Moon valley</h2>
+    </div>
+    
+  <p>
+     Located in Atacama Desert, around 13 km west of San Pedro de Atacama and 110 km NE from Calama, it is part of the region of Antofagasta Chile. The Moon Valley was declared Nature Sanctuary in 1982.</p>
+    
+    <div text-center>
+        <h3>Vision</h3>
+    </div>
+      
+<p>Hand to hand with the current administration, The Moon Valley’s indigenous association will provide a service  of quality and excellence, promoting  the  Moon Valley’s natural sanctuary as one of the most important tourist destinations of Chile and the world.</p>   
+    <div text-center>
+        <h3>Mission</h3>
+    </div>
+    
+    <p>
+        Provide the best service in order to achieve the full visitors’ satisfaction that who will be able to enjoy and learn about the wonders that “The Moon Valley” Natural Sanctuary offers.
+  </p>
+    <div text-center>
+    <h3>Welcome!</h3>
+    <h4>Asociacion indigena valle de la luna</h4>    
+    </div>
+</div>
+</ion-content>

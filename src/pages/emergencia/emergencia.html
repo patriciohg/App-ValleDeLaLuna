@@ -1,0 +1,92 @@
+
+<ion-header >
+  <ion-navbar color= "fondo">
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="contenido">
+        <button ion-button full color="fondo" (click)="cambio()">Soy guia y/o trbajador del valle</button>
+    <div *ngIf = "English == false && guia== true" text-justify>
+        <div text-center>
+        <h1>Tipos de emergencia</h1>
+        </div>
+        
+        <p>COD 1: Accidentes graves trabajadores propios y/o turistas<br>
+            COD 2 : Incendios<br>
+            COD 3 : Ambientales (Derrames de bencina y/o Petroleo)<br>
+            COD 4 : Naturales(sismos, lluvia, tormentas electricas, etc).<br>
+            COD 5 : Derrumbes
+        </p>
+        <div text-center>
+        <h1>En caso de emergencia</h1>
+        </div>
+        <p>1.-Avisa al jefe de turno, por frecuencia radial N°1 o fono emergencia valle de la luna, jefe de turno avisa a administrador del valle de la luna<br>
+        2.-Cuando ocurre una emergencia ¿Que se informa?<br>
+            -Tipo de emergencia<br>
+            -Identificacion del informante<br>
+        Ejemplo<br>
+            Aviso "Atento jefe de turno, Atencion solicito silencio por emergencia radia codigo(1,2,3,4)", repetir las veces que sea necesario
+        </p>
+        <div text-center>
+        <h1>Jefe de turno</h1>
+        </div>
+        <p>1.-Evaluar la emergencia (grado 1, 2, 3)<br>
+        2.-Comunica la emergencia a administrador valle de la luna.
+            -Aisla zona<br>
+            -Disponibiliza recursos, basicos<br>
+            -Evacuacion de turistas y/o personal cuando corresponda<br>
+            4.-Coordinara las acciones de emergencia grado 1,2,3 y 4<br>
+        </p>
+    </div>
+    <div *ngIf = "English == true && guia== true" text-justify>
+        <div text-center>
+            <h1>Emergency communication</h1>
+        </div>        
+        <h4>Types of:</h4>
+        <p>COD 1: Serious accidents to own employees and/or tourists <br>
+            COD 2 : Fires<br>
+            COD 3 : Environmental  (petrol and/or oil spills) <br>
+            COD 4 : Natural (earthquakes, rains, thunderstorms, etc).<br>
+            COD 5 : Landslides.
+        </p>
+        <div text-center>
+        <h1>Informer</h1>
+        </div>
+        <p>1.-  Notifies the shift supervisor by radial frequency  number 1 or Moon Valley’s emergency phone, shift supervisor warns the Moon Valley’s administrator.<br>
+        2.- When an emergency occurs, What is communicated?<br>
+            -Type of emergency indicating code and place.<br>
+            -Informers’ identification.<br>
+        Example<br>
+            Notice: “Attentive head of shift, attention,  I request emergency radial silence code (1, 2, 3, 4) ". Repeat as often as necessary.
+        </p>
+        <div text-center>
+        <h1>Shift Supervisor</h1>
+        </div>
+        <p>1.- Evaluate the emergency ( grade 1,2,3)<br>
+        2.- Communicate the emergency to Moon Valley’s administrator.<br>
+        3.-Apply local controls for emergency Grade 1.
+            -Isolate Zone<br>
+            -Make basic resources <br>
+            -Evacuation of tourist and/or staff when necessary.<br>
+            4.-Coordinate the emergency control actions grade 1, 2, 3 and 4.<br>
+        </p>
+    
+    
+    </div>
+    <div *ngIf = "English == true && guia== false" text-justify>
+        <br>
+        <h3>In case of emergency, contact the emergency number</h3>
+        <h4>
+            +56 9 90104020
+        </h4>
+    </div>
+    <div text-justify *ngIf="English == false && guia == false">
+        <br>
+        <h3>En caso de emergencia dar aviso a personal del valle de la luna, Y si no comunicar en forma directa al numero de emergencia valle de luna</h3>
+        <h4>
+            +56 9 90104020
+        </h4>
+    </div>
+
+</ion-content>

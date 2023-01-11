@@ -1,0 +1,91 @@
+<ion-header>
+
+  <ion-navbar color="fondo" text-center>
+    <ion-title>{{title}} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center class="contenido">
+<ion-card>
+  <img src="../../assets/imgs/1.png"/>
+</ion-card>
+<div *ngIf="English == false">
+<button ion-button icon-right (click)="leerMas(1)" color="fondo">
+  Leer mas
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+
+<div *ngIf="English == true">
+<button ion-button icon-right (click)="leerMas(1)" color="fondo">
+  Read More
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+<ion-card>
+  <img src="../../assets/imgs/2.png"/>
+</ion-card>
+<div *ngIf="English == false">
+<button ion-button icon-right (click)="leerMas(2)" color="fondo">
+  Leer mas
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+
+<div *ngIf="English == true">
+<button ion-button icon-right (click)="leerMas(2)" color="fondo">
+  Read More
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+<ion-card>
+  <img src="../../assets/imgs/3.png"/>
+</ion-card>
+<div *ngIf="English == false">
+<button ion-button icon-right (click)="leerMas(3)" color="fondo">
+  Leer mas
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+
+<div *ngIf="English == true">
+<button ion-button icon-right (click)="leerMas(3)" color="fondo">
+  Read More
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+<ion-card>
+  <img src="../../assets/imgs/4.png"/>
+</ion-card>
+<div *ngIf="English == false">
+<button ion-button icon-right (click)="leerMas(4)" color="fondo">
+  Leer mas
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+
+<div *ngIf="English == true">
+<button ion-button icon-right (click)="leerMas(4)" color="fondo">
+  Read More
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+<ion-card>
+  <img src="../../assets/imgs/5.png"/>
+</ion-card>
+<div *ngIf="English == false">
+<button ion-button icon-right (click)="leerMas(5)" color="fondo">
+  Leer mas
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+
+<div *ngIf="English == true">
+<button ion-button icon-right (click)="leerMas(5)" color="fondo">
+  Read More
+  <ion-icon name="book"></ion-icon>
+</button>
+</div>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header *ngIf="English == false">
+  <ion-navbar color="fondo" text-center>
+    <ion-title>Valle de la luna</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-header *ngIf="English == true">
+  <ion-navbar color="fondo" text-center>
+    <ion-title>Moon valley</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="contenido">
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+      <ion-list >
+        <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start color="boton">
+          <ion-icon [name]="item.icon" [ngStyle]="{'color':item.color}" item-start ></ion-icon>
+          {{ item.title }}
+        </button>
+      </ion-list>
+</ion-content>

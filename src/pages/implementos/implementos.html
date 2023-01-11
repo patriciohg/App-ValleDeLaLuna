@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar color="fondo">
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="contenido">
+<div *ngIf="English == false" text-justify>
+    <div text-center>
+        <h3>Cavernas</h3>
+    </div>
+        <li>Lintera</li>
+        <li>Ir acompañado de guias autorizados</li><br>
+    <div text-center>
+        <h3>Treking/caminata y General<ion-icon name="walk"></ion-icon></h3>
+    </div>
+            <li>Use foto protector FPS 50 +</li>
+            <li>Zapatos con huella marcada</li>
+            <li>Uso de gafas con protección UV</li>
+            <li>2 Litros de agua</li><br>
+    <div text-center>
+        <h2>Ciclistas <ion-icon name="bicycle" item-start></ion-icon></h2>
+        <p>(USO OBLIGATORIO)</p>
+    </div>
+        <li>Antes de ingresar al valle verificar correcto estado de la bicicleta, (frenos, ruedas, asegurar manubrio, etc).</li>
+        <li>Usar casco</li>
+        <li>Usar chaleco reflectante</li>
+        <li>Respetar protocolos de seguridad Valle de la Luna, en caso de emergencia</li>
+    <button ion-button full color="fondo" (click)="Opensecurity()">Leer mas</button>
+</div>
+<div *ngIf="English == true" text-justify>
+    <div text-center>
+        <h3>Caverns</h3>
+    </div>
+        <li>Lantern</li>
+        <li>Go accompanied by authorized guides</li><br>
+    <div text-center>
+        <h3>Treking<ion-icon name="walk"></ion-icon></h3>
+    </div>
+            <li>Use Sunscreen SPF 50 +</li>
+            <li>Use of footwear that holds the ankle and has a good sole pattern is recommended</li>
+            <li>Use of glasses with UV protection </li>
+            <li>Take 2 Liters of water</li><br>
+    <div text-center>
+        <h2>Ciclistas <ion-icon name="bicycle" item-start></ion-icon></h2>
+        <p>(USO OBLIGATORIO)</p>
+    </div>
+        <li>Before entering the Valley check bicycle conditions (brakes, wheels, securing handlebars, etc).</li>
+        <li>Use of helmet.</li>
+        <li>Use reflective vest.</li>
+        <li>Respect The Moon Valley’s safety protocols in case of emergency.</li>
+    <button ion-button full color="fondo" (click)="Opensecurity()">Read more</button>
+</div>
+</ion-content>  
